@@ -22,3 +22,25 @@
     }
   }
 }
+
+@mixin mobileHero {
+  @media screen and (max-width: 768px) {
+    .heroLinks {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      transform: translateY(20%);
+
+      a:nth-child(1) {
+        background: #ffffff;
+        color: #36769d;
+        font-size: 1.3rem;
+        text-decoration: underline;
+      }
+      a:nth-child(2) {
+        background: #8acfe5;
+        color: #000000;
+      }
+    }
+  }
+}

@@ -9,6 +9,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   padding: 26px 27px 22px 27px;
 
@@ -44,7 +48,6 @@ header {
       li {
         a {
           color: #ffffff;
-          text-decoration: none;
         }
         .menuContact {
           color: #8acfe5;
@@ -54,3 +57,37 @@ header {
   }
 }
 @include mixins.mobileHeader;
+
+.hero {
+  max-width: 100%;
+  max-height: auto;
+}
+.heroLinks {
+  display: flex;
+  justify-content: center;
+
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+
+  transform: translateY(-55%);
+
+  a {
+    box-sizing: border-box;
+    width: 308px;
+    height: 66px;
+
+    margin: 0 9px;
+    padding: 19px 0px 19px;
+    border-radius: 4px;
+  }
+  a:nth-child(1) {
+    background: #e3170a;
+    color: #ffffff;
+  }
+  a:nth-child(2) {
+    background: #8acfe5;
+    color: #000000;
+  }
+}
+@include mixins.mobileHero;
