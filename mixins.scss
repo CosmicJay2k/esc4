@@ -1,0 +1,24 @@
+@mixin mobileHeader {
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 26px 27px 36px 27px;
+      .logo {
+        display: flex;
+        padding: 0;
+        img {
+          width: 128px;
+          height: 82px;
+        }
+        h1 {
+          align-self: flex-end;
+          font-size: 2rem;
+        }
+      }
+      .menu {
+        ul {
+          display: none;
+        }
+      }
+    }
+  }
+}

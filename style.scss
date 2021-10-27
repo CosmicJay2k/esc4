@@ -1,0 +1,56 @@
+@use "mixins";
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: 26px 27px 22px 27px;
+
+  background: #011827;
+  color: #ffffff;
+
+  .logo {
+    display: flex;
+    padding: 0 0 50px 0;
+    img {
+      width: 128px;
+      height: 82px;
+    }
+    h1 {
+      align-self: flex-end;
+      margin: 0;
+      padding: 0 0 0 27px;
+      font-size: 3.3rem;
+    }
+  }
+  .menu {
+    ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+
+      margin: 0;
+
+      list-style-type: none;
+      font-size: 2rem;
+      font-weight: bold;
+
+      li {
+        a {
+          color: #ffffff;
+          text-decoration: none;
+        }
+        .menuContact {
+          color: #8acfe5;
+        }
+      }
+    }
+  }
+}
+@include mixins.mobileHeader;
