@@ -204,14 +204,14 @@ header .menu ul li .menuContact {
 }
 .popChall ul .popCard div .stars {
   margin: 0 4px;
-  content: url("star.png");
+  content: url("Star.png");
   object-fit: contain;
 }
 .popChall ul .popCard div p {
   margin: 0;
 }
 .popChall ul .popCard div div :nth-child(5) {
-  content: url("starEmpty.png");
+  content: url("StarEmpty.png");
 }
 .popChall ul .popCard div .players {
   font-size: 1.3rem;
