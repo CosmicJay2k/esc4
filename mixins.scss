@@ -25,6 +25,9 @@
 
 @mixin mobileHero {
   @media screen and (max-width: 768px) {
+    .hero {
+      height: 274px;
+    }
     .heroLinks {
       flex-direction: column-reverse;
       align-items: center;

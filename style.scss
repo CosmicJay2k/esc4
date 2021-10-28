@@ -59,8 +59,9 @@ header {
 @include mixins.mobileHeader;
 
 .hero {
-  max-width: 100%;
-  max-height: auto;
+  width: 100%;
+  height: 468px;
+  object-fit: cover;
 }
 .heroLinks {
   display: flex;
