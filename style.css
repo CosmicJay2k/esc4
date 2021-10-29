@@ -287,5 +287,34 @@ header .menu ul li .menuContact {
     justify-content: space-between;
   }
 }
+.shortStory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 500px;
+  background: #011827;
+}
+.shortStory p {
+  max-width: 600px;
+  padding: 0 20px;
+  color: #ffffff;
+  font-size: 2.3rem;
+  text-align: center;
+}
+.shortStory a {
+  box-sizing: border-box;
+  width: 308px;
+  height: 66px;
+  padding: 16px 0px 22px;
+  border: 2px solid #8acfe6;
+  border-radius: 4px;
+  color: #8acfe6;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
