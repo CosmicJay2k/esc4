@@ -22,17 +22,22 @@ header {
   .logo {
     display: flex;
     padding: 0 0 50px 0;
+
     img {
       width: 128px;
       height: 82px;
     }
+
     h1 {
       align-self: flex-end;
+
       margin: 0;
       padding: 0 0 0 24px;
+
       font-size: 3.3rem;
     }
   }
+
   .menu {
     ul {
       display: flex;
@@ -50,6 +55,7 @@ header {
         a {
           color: #ffffff;
         }
+
         .menuContact {
           color: #8acfe5;
         }
@@ -64,11 +70,13 @@ header {
   height: 468px;
   object-fit: cover;
 }
+
 .heroLinks {
   display: flex;
   justify-content: center;
 
   transform: translateY(-55%);
+
   a {
     box-sizing: border-box;
     width: 308px;
@@ -82,10 +90,12 @@ header {
     font-weight: bold;
     text-align: center;
   }
+
   a:nth-child(1) {
     background: #e3170a;
     color: #ffffff;
   }
+
   a:nth-child(2) {
     background: #8acfe5;
     color: #000000;
@@ -107,23 +117,30 @@ header {
     margin: 0 0 0 20px;
     border-radius: 100%;
   }
+
   .qText {
     display: flex;
     flex-direction: column;
+
     max-width: 408px;
     margin: 0 0 0 15px;
   }
+
   blockquote {
     max-width: 407px;
+
     margin: 0;
+
     font-size: 2rem;
     font-style: italic;
+
     p {
       margin: 0 0 10px;
     }
   }
   cite {
     max-width: 285px;
+
     font-size: 1.5rem;
     font-style: normal;
   }
@@ -132,11 +149,14 @@ header {
 
 .popChall {
   margin: 0;
+
   .heading {
     margin: 100px 0 60px 0;
+
     font-size: 3rem;
     text-align: center;
   }
+
   ul {
     display: flex;
     justify-content: space-evenly;
@@ -156,6 +176,7 @@ header {
       height: 446px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
       border-radius: 8px;
+
       padding: 0 11px 0 17px;
 
       background: url("hero.png");
@@ -169,53 +190,66 @@ header {
         font-size: 2.3rem;
         font-weight: normal;
       }
+
       div {
         display: flex;
         justify-content: space-between;
+
         .stars {
           margin: 0 8px 0 0;
 
           content: url("Star.png");
           object-fit: contain;
         }
+
         p {
           margin: 0;
         }
+
         div {
           :nth-child(5) {
             content: url("StarEmpty.png");
           }
         }
+
         .players {
           font-size: 1.2rem;
         }
       }
+
       .description {
         padding: 8px 0 10px;
+
         font-size: 1.5rem;
       }
+
       .book {
         display: flex;
         justify-content: flex-end;
+
         a {
           box-sizing: border-box;
 
           width: 180px;
           height: 44px;
+
           padding: 1rem 0;
           border-radius: 4px;
 
-          background: #e3170a;
-          color: #ffffff;
           font-size: 1.3rem;
           text-align: center;
+
+          background: #e3170a;
+          color: #ffffff;
         }
       }
     }
   }
+
   .popLinks {
     display: flex;
     justify-content: center;
+
     a {
       box-sizing: border-box;
       width: 308px;
@@ -229,10 +263,12 @@ header {
       font-weight: bold;
       text-align: center;
     }
+
     a:nth-child(1) {
       background: #e3170a;
       color: #ffffff;
     }
+
     a:nth-child(2) {
       background: #8acfe5;
       color: #000000;
@@ -252,15 +288,19 @@ header {
   height: 500px;
 
   background: #011827;
+
   p {
     max-width: 600px;
+
     padding: 0 20px;
     margin: 0 0 40px 0;
 
-    color: #ffffff;
     font-size: 2.3rem;
     text-align: center;
+
+    color: #ffffff;
   }
+
   a {
     box-sizing: border-box;
     width: 308px;
@@ -270,11 +310,11 @@ header {
     border: 2px solid #8acfe6;
     border-radius: 4px;
 
-    color: #8acfe6;
-
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+
+    color: #8acfe6;
   }
 }
 
@@ -282,10 +322,12 @@ header {
   .hl1,
   .hl2 {
     display: flex;
+
     height: 460px;
 
     img {
       width: 50%;
+
       object-fit: cover;
     }
 
@@ -296,6 +338,7 @@ header {
       align-items: center;
 
       width: 50%;
+
       div {
         box-sizing: border-box;
         max-width: 416px;
@@ -305,11 +348,14 @@ header {
 
       h1 {
         margin: 0 auto;
+
         font-size: 2.7rem;
       }
+
       p {
         font-size: 2rem;
       }
+
       a {
         box-sizing: border-box;
         width: 308px;
@@ -339,6 +385,7 @@ header {
 footer {
   display: flex;
   justify-content: space-evenly;
+
   padding: 150px 0;
   margin: 182px 0 0 0;
 
@@ -348,33 +395,43 @@ footer {
   color: #ffffff;
 
   h1 {
-    font-size: 1.5rem;
     margin: 7px 0;
+
+    font-size: 1.5rem;
   }
+
   .about {
     display: flex;
     flex-direction: column;
+
     margin: 0 20px;
 
     p {
       max-width: 420px;
+
       margin: 0;
+
       font-weight: normal;
     }
   }
+
   .ftLinks {
     display: flex;
     justify-content: space-evenly;
 
     width: 40%;
+
     .sitemap {
       display: flex;
       flex-direction: column;
+
       margin: 0 20px;
     }
+
     .social {
       display: flex;
       flex-direction: column;
+
       margin: 0 20px;
     }
   }

@@ -2,16 +2,22 @@
   @media screen and (max-width: 768px) {
     header {
       padding: 26px 27px 36px 27px;
+
       .logo {
         display: flex;
+
         padding: 0;
+
         img {
           width: 128px;
           height: 82px;
         }
+
         h1 {
           width: 80px;
+
           padding: 0 0 0 13px;
+
           font-size: 2rem;
         }
       }
@@ -29,6 +35,7 @@
     .hero {
       height: 274px;
     }
+
     .heroLinks {
       flex-direction: column-reverse;
       align-items: center;
@@ -36,11 +43,13 @@
       transform: translateY(20%);
 
       a:nth-child(1) {
-        background: #ffffff;
-        color: #36769d;
         font-size: 1.3rem;
         text-decoration: underline;
+
+        background: #ffffff;
+        color: #36769d;
       }
+
       a:nth-child(2) {
         background: #8acfe5;
         color: #000000;
@@ -53,18 +62,23 @@
   @media screen and (max-width: 768px) {
     .quotes {
       margin: 70px 20px 0 20px;
+
       img {
         margin: 0;
       }
+
       :nth-child(3) {
         display: none;
       }
+
       :nth-child(4) {
         display: none;
       }
+
       blockquote {
         max-width: 342px;
       }
+
       cite {
         max-width: 342px;
       }
@@ -77,8 +91,10 @@
     .popChall {
       .heading {
         margin: 100px 0 45px 0;
+
         font-size: 2.7rem;
       }
+
       .popLinks {
         flex-direction: column-reverse;
         align-items: center;
@@ -87,13 +103,17 @@
 
         a:nth-child(1) {
           margin: 0px;
-          background: #ffffff;
-          color: #36769d;
+
           font-size: 1.3rem;
           text-decoration: underline;
+
+          background: #ffffff;
+          color: #36769d;
         }
+
         a:nth-child(2) {
           margin: 0px;
+
           background: #8acfe5;
           color: #000000;
         }
@@ -116,6 +136,7 @@
       .hl2 {
         display: flex;
         flex-direction: column;
+
         height: 100%;
 
         img {
@@ -132,6 +153,7 @@
 
           height: 100%;
           width: 100%;
+
           div {
             box-sizing: border-box;
             max-width: 100%;
@@ -141,15 +163,19 @@
 
           h1 {
             margin: 30px 0 0 0;
+
             font-size: 2.7rem;
           }
           p {
             margin: 15px auto 25px auto;
+
             font-size: 2rem;
           }
           a {
             align-self: flex-start;
+
             margin: 20px 20px 60px;
+
             transform: translateX(0);
           }
         }
@@ -169,19 +195,24 @@
       margin: 40px 0 0 0;
 
       h1 {
-        font-size: 1.5rem;
         margin: 0 0 7px 0;
+
+        font-size: 1.5rem;
       }
+
       .about {
         display: flex;
         flex-direction: column;
+
         margin: 0 21px;
 
         p {
           max-width: 440px;
+
           margin: 0;
         }
       }
+
       .ftLinks {
         display: flex;
         flex-direction: column;
@@ -190,11 +221,14 @@
         .sitemap {
           display: flex;
           flex-direction: column;
+
           margin: 0 20px;
         }
+
         .social {
           display: flex;
           flex-direction: column;
+
           margin: 0 20px;
         }
       }
