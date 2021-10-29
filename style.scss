@@ -170,7 +170,7 @@ header {
         display: flex;
         justify-content: space-between;
         .stars {
-          margin: 0 4px;
+          margin: 0 8px 0 0;
 
           content: url("Star.png");
           object-fit: contain;
