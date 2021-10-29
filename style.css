@@ -139,7 +139,7 @@ header .menu ul li .menuContact {
   margin: 0 0 0 15px;
 }
 .quotes blockquote {
-  width: 407px;
+  max-width: 407px;
   margin: 0;
   font-size: 2rem;
   font-style: italic;
@@ -148,7 +148,7 @@ header .menu ul li .menuContact {
   margin: 0 0 10px;
 }
 .quotes cite {
-  width: 285px;
+  max-width: 285px;
   font-size: 1.5rem;
   font-style: normal;
 }
@@ -167,10 +167,10 @@ header .menu ul li .menuContact {
     display: none;
   }
   .quotes blockquote {
-    width: 342px;
+    max-width: 342px;
   }
   .quotes cite {
-    width: 342px;
+    max-width: 342px;
   }
 }
 .popChall {
