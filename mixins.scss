@@ -62,6 +62,12 @@
       :nth-child(4) {
         display: none;
       }
+      blockquote {
+        width: 342px;
+      }
+      cite {
+        width: 342px;
+      }
     }
   }
 }
@@ -167,7 +173,7 @@
       .about {
         display: flex;
         flex-direction: column;
-        margin: 0 20px;
+        margin: 0 21px;
 
         p {
           max-width: 440px;
