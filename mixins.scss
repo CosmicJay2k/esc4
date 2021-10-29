@@ -149,3 +149,46 @@
     }
   }
 }
+
+@mixin mobileFooter {
+  @media screen and (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 40px;
+
+      padding: 64px 0;
+
+      h1 {
+        font-size: 1.5rem;
+        margin: 7px 0;
+      }
+      .about {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+
+        p {
+          max-width: 440px;
+          margin: 0;
+        }
+      }
+      .ftLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 47px;
+
+        .sitemap {
+          display: flex;
+          flex-direction: column;
+          margin: 0 20px;
+        }
+        .social {
+          display: flex;
+          flex-direction: column;
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+}
