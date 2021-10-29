@@ -27,14 +27,15 @@ header .logo img {
 header .logo h1 {
   align-self: flex-end;
   margin: 0;
-  padding: 0 0 0 27px;
+  padding: 0 0 0 24px;
   font-size: 3.3rem;
 }
 header .menu ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
-  margin: 0;
+  padding: 0;
+  margin: 0 90px;
   list-style-type: none;
   font-size: 2rem;
   font-weight: bold;
@@ -59,7 +60,8 @@ header .menu ul li .menuContact {
     height: 82px;
   }
   header .logo h1 {
-    align-self: flex-end;
+    width: 80px;
+    padding: 0 0 0 13px;
     font-size: 2rem;
   }
   header .menu ul {
@@ -187,7 +189,7 @@ header .menu ul li .menuContact {
   height: 446px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  padding: 0 17px;
+  padding: 0 11px 0 17px;
   background: url("hero.png");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -203,7 +205,7 @@ header .menu ul li .menuContact {
   justify-content: space-between;
 }
 .popChall ul .popCard div .stars {
-  margin: 0 4px;
+  margin: 0 8px 0 0;
   content: url("Star.png");
   object-fit: contain;
 }
@@ -214,10 +216,10 @@ header .menu ul li .menuContact {
   content: url("StarEmpty.png");
 }
 .popChall ul .popCard div .players {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .popChall ul .popCard .description {
-  padding: 8px 0;
+  padding: 8px 0 10px;
   font-size: 1.5rem;
 }
 .popChall ul .popCard .book {
@@ -300,6 +302,7 @@ header .menu ul li .menuContact {
 .shortStory p {
   max-width: 600px;
   padding: 0 20px;
+  margin: 0 0 40px 0;
   color: #ffffff;
   font-size: 2.3rem;
   text-align: center;
