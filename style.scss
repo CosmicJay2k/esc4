@@ -426,6 +426,10 @@ footer {
       flex-direction: column;
 
       margin: 0 20px;
+
+      :nth-child(4) {
+        margin: 0 0 1.5rem 0;
+      }
     }
 
     .social {
