@@ -409,11 +409,12 @@ header .menu ul li .menuContact {
   }
   .highlights .hl1 .hlText h1,
 .highlights .hl2 .hlText h1 {
-    margin: 30px 0;
+    margin: 30px 0 0 0;
     font-size: 2.7rem;
   }
   .highlights .hl1 .hlText p,
 .highlights .hl2 .hlText p {
+    margin: 15px auto 25px auto;
     font-size: 2rem;
   }
   .highlights .hl1 .hlText a,
@@ -427,7 +428,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 150px 0;
-  margin: 50px 0 0 0;
+  margin: 182px 0 0 0;
   font-size: 1.5rem;
   background: #011827;
   color: #ffffff;
@@ -444,6 +445,7 @@ footer .about {
 footer .about p {
   max-width: 420px;
   margin: 0;
+  font-weight: normal;
 }
 footer .ftLinks {
   display: flex;
@@ -468,12 +470,13 @@ footer a {
   footer {
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 40px;
+    gap: 37px;
     padding: 64px 0;
+    margin: 40px 0 0 0;
   }
   footer h1 {
     font-size: 1.5rem;
-    margin: 7px 0;
+    margin: 0 0 7px 0;
   }
   footer .about {
     display: flex;
