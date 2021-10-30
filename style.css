@@ -253,12 +253,15 @@ header .menu ul li .menuContact {
   box-sizing: border-box;
   width: 308px;
   height: 66px;
-  margin: 70px 9px;
+  margin: 0 9px;
   padding: 19px 0px 19px;
   border-radius: 4px;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
+}
+.popChall .popLinks a {
+  margin: 70px 9px;
 }
 .popChall .popLinks a:nth-child(1) {
   background: #e3170a;
@@ -366,11 +369,15 @@ header .menu ul li .menuContact {
   box-sizing: border-box;
   width: 308px;
   height: 66px;
-  padding: 19px 0 19px;
+  margin: 0 9px;
+  padding: 19px 0px 19px;
   border-radius: 4px;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
+}
+.highlights .hl1 .hlText a,
+.highlights .hl2 .hlText a {
   background: #e3170a;
   color: #ffffff;
   transform: translateX(-17%);
