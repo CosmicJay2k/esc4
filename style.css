@@ -351,17 +351,16 @@ header .menu ul li .menuContact {
 }
 .highlights .hl1 .hlText div,
 .highlights .hl2 .hlText div {
-  box-sizing: border-box;
   max-width: 416px;
   margin: 0 10px;
 }
-.highlights .hl1 .hlText h1,
-.highlights .hl2 .hlText h1 {
+.highlights .hl1 .hlText div h1,
+.highlights .hl2 .hlText div h1 {
   margin: 0 auto;
   font-size: 2.7rem;
 }
-.highlights .hl1 .hlText p,
-.highlights .hl2 .hlText p {
+.highlights .hl1 .hlText div p,
+.highlights .hl2 .hlText div p {
   font-size: 2rem;
 }
 .highlights .hl1 .hlText a,
