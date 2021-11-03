@@ -4,9 +4,54 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
 }
 
+.menuBox {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menuBox {
+    display: none;
+    justify-content: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 23px;
+    left: 20px;
+    right: 20px;
+    z-index: 1;
+    max-height: 919px;
+    background: #011827;
+  }
+  .menuBox .mobMenuClose {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 26px;
+  }
+  .menuBox .mobMenuClose i {
+    font-size: 4rem;
+    color: #ffffff;
+  }
+  .menuBox .mobMenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 260px 0;
+    list-style-type: none;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .menuBox .mobMenu ul li {
+    margin: 0 0 50px 0;
+  }
+  .menuBox .mobMenu ul li a {
+    color: #ffffff;
+  }
+}
 a {
   text-decoration: none;
 }
@@ -30,6 +75,9 @@ header .logo h1 {
   padding: 0 0 0 24px;
   font-size: 3.3rem;
 }
+header .mobMenuIcon {
+  display: none;
+}
 header .menu ul {
   display: flex;
   flex-flow: row nowrap;
@@ -49,6 +97,7 @@ header .menu ul li .menuContact {
 
 @media screen and (max-width: 768px) {
   header {
+    position: relative;
     padding: 26px 27px 36px 27px;
   }
   header .logo {
@@ -66,6 +115,15 @@ header .menu ul li .menuContact {
   }
   header .menu ul {
     display: none;
+  }
+  header .mobMenuIcon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 26px;
+  }
+  header .mobMenuIcon i {
+    font-size: 4rem;
   }
 }
 .hero {
@@ -413,13 +471,13 @@ header .menu ul li .menuContact {
     max-width: 100%;
     margin: 0 20px;
   }
-  .highlights .hl1 .hlText h1,
-.highlights .hl2 .hlText h1 {
+  .highlights .hl1 .hlText div h1,
+.highlights .hl2 .hlText div h1 {
     margin: 30px 0 0 0;
     font-size: 2.7rem;
   }
-  .highlights .hl1 .hlText p,
-.highlights .hl2 .hlText p {
+  .highlights .hl1 .hlText div p,
+.highlights .hl2 .hlText div p {
     margin: 15px auto 25px auto;
     font-size: 2rem;
   }

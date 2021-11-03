@@ -6,9 +6,13 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
 }
-
+.menuBox {
+  display: none;
+}
+@include mixins.mobile;
 a {
   text-decoration: none;
 }
@@ -36,6 +40,9 @@ header {
 
       font-size: 3.3rem;
     }
+  }
+  .mobMenuIcon {
+    display: none;
   }
 
   .menu {
