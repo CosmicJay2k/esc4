@@ -13,29 +13,35 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .menuBox {
+  .modal {
     display: none;
     justify-content: center;
     box-sizing: border-box;
-    position: absolute;
-    top: 23px;
-    left: 20px;
-    right: 20px;
+    position: fixed;
     z-index: 1;
-    max-height: 919px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .modal .menuBox {
+    display: block;
+    margin: 23px 20px;
+    max-width: 768px;
     background: #011827;
   }
-  .menuBox .mobMenuClose {
+  .modal .menuBox .mobMenuClose {
     display: block;
     position: absolute;
-    right: 20px;
-    top: 26px;
+    right: 40px;
+    top: 40px;
   }
-  .menuBox .mobMenuClose i {
+  .modal .menuBox .mobMenuClose i {
     font-size: 4rem;
     color: #ffffff;
   }
-  .menuBox .mobMenu ul {
+  .modal .menuBox .mobMenu ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,10 +51,10 @@ body {
     font-size: 3rem;
     font-weight: bold;
   }
-  .menuBox .mobMenu ul li {
+  .modal .menuBox .mobMenu ul li {
     margin: 0 0 50px 0;
   }
-  .menuBox .mobMenu ul li a {
+  .modal .menuBox .mobMenu ul li a {
     color: #ffffff;
   }
 }
@@ -338,10 +344,10 @@ header .menu ul li .menuContact {
   .popChall .popLinks {
     flex-direction: column-reverse;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 0 20px;
   }
   .popChall .popLinks a:nth-child(1) {
-    margin: 0px;
+    margin: 10px 0;
     font-size: 1.3rem;
     text-decoration: underline;
     background: #ffffff;
