@@ -202,6 +202,16 @@
 
         font-size: 2.7rem;
       }
+      ul {
+        .popCard {
+          div {
+            justify-content: flex-start;
+            .players {
+              margin: 0 0 0 10px;
+            }
+          }
+        }
+      }
 
       .popLinks {
         flex-direction: column-reverse;
