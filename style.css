@@ -114,8 +114,9 @@ header .menu ul {
 header .menu ul li a {
   color: #ffffff;
 }
-header .menu ul li .menuContact {
+header .menu ul li :hover {
   color: #8acfe5;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 768px) {
@@ -434,7 +435,7 @@ header .menu ul li .menuContact {
 .highlights .hl1 .hlText div,
 .highlights .hl2 .hlText div {
   max-width: 416px;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 .highlights .hl1 .hlText div h1,
 .highlights .hl2 .hlText div h1 {
@@ -447,6 +448,12 @@ header .menu ul li .menuContact {
 }
 .highlights .hl1 .hlText a,
 .highlights .hl2 .hlText a {
+  background: #e3170a;
+  color: #ffffff;
+  transform: translateX(-17%);
+}
+.highlights .hl1 .hlText a,
+.highlights .hl2 .hlText a {
   box-sizing: border-box;
   width: 308px;
   height: 66px;
@@ -456,12 +463,6 @@ header .menu ul li .menuContact {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-}
-.highlights .hl1 .hlText a,
-.highlights .hl2 .hlText a {
-  background: #e3170a;
-  color: #ffffff;
-  transform: translateX(-17%);
 }
 .highlights .hl2 {
   flex-direction: row-reverse;

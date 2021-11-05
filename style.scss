@@ -63,8 +63,9 @@ header {
           color: #ffffff;
         }
 
-        .menuContact {
+        :hover {
           color: #8acfe5;
+          transition: 0.3s;
         }
       }
     }
@@ -328,7 +329,7 @@ header {
       div {
         max-width: 416px;
 
-        margin: 0 10px;
+        margin: 0 20px;
 
         h1 {
           margin: 0 auto;
@@ -340,13 +341,14 @@ header {
           font-size: 2rem;
         }
       }
-      @include mixins.button;
+
       a {
         background: #e3170a;
         color: #ffffff;
 
         transform: translateX(-17%);
       }
+      @include mixins.button;
     }
   }
 
