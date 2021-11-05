@@ -28,8 +28,7 @@
       width: 100%;
       height: 100%;
 
-      background: rgba(0, 0, 0, 0.5);
-
+      background: rgba(255, 255, 255, 0.5);
       .menuBox {
         display: block;
         margin: 23px 20px;
@@ -37,6 +36,9 @@
         max-width: 768px;
 
         background: #011827;
+
+        animation-name: mobileMenuAni;
+        animation-duration: 0.2s;
 
         .mobMenuClose {
           display: block;
@@ -47,6 +49,12 @@
           i {
             font-size: 4rem;
             color: #ffffff;
+            opacity: 0;
+
+            animation-name: mobileMenuAni;
+            animation-duration: 0.2s;
+            animation-delay: 0.2s;
+            animation-fill-mode: forwards;
           }
         }
         .mobMenu {
@@ -73,6 +81,16 @@
       }
     }
   }
+  @keyframes mobileMenuAni {
+    0% {
+      transform: scale(90%);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(100%);
+      opacity: 1;
+    }
+  }
 }
 @mixin mobileHeader {
   @media screen and (max-width: 768px) {
@@ -95,7 +113,8 @@
 
           padding: 0 0 0 13px;
 
-          font-size: 2rem;
+          line-height: 2.4rem;
+          font-size: 2.2rem;
         }
       }
 
