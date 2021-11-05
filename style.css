@@ -360,6 +360,12 @@ header .menu ul li :hover {
     margin: 100px 0 45px 0;
     font-size: 2.7rem;
   }
+  .popChall ul .popCard div {
+    justify-content: flex-start;
+  }
+  .popChall ul .popCard div .players {
+    margin: 0 0 0 10px;
+  }
   .popChall .popLinks {
     flex-direction: column-reverse;
     align-items: center;
@@ -448,12 +454,6 @@ header .menu ul li :hover {
 }
 .highlights .hl1 .hlText a,
 .highlights .hl2 .hlText a {
-  background: #e3170a;
-  color: #ffffff;
-  transform: translateX(-17%);
-}
-.highlights .hl1 .hlText a,
-.highlights .hl2 .hlText a {
   box-sizing: border-box;
   width: 308px;
   height: 66px;
@@ -463,6 +463,12 @@ header .menu ul li :hover {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
+}
+.highlights .hl1 .hlText a,
+.highlights .hl2 .hlText a {
+  background: #e3170a;
+  color: #ffffff;
+  transform: translateX(-17%);
 }
 .highlights .hl2 {
   flex-direction: row-reverse;
