@@ -341,14 +341,13 @@ header {
           font-size: 2rem;
         }
       }
-
+      @include mixins.button;
       a {
         background: #e3170a;
         color: #ffffff;
 
         transform: translateX(-17%);
       }
-      @include mixins.button;
     }
   }
 
