@@ -164,8 +164,7 @@ header .menu ul li :hover {
 }
 .heroLinks a {
   box-sizing: border-box;
-  width: 100%;
-  max-width: 308px;
+  width: 308px;
   height: 66px;
   margin: 0 9px;
   padding: 19px 0px 19px;
@@ -335,8 +334,7 @@ header .menu ul li :hover {
 }
 .popChall .popLinks a {
   box-sizing: border-box;
-  width: 100%;
-  max-width: 308px;
+  width: 308px;
   height: 66px;
   margin: 0 9px;
   padding: 19px 0px 19px;
@@ -456,8 +454,7 @@ header .menu ul li :hover {
 .highlights .hl1 .hlText div a,
 .highlights .hl2 .hlText div a {
   box-sizing: border-box;
-  width: 100%;
-  max-width: 308px;
+  width: 308px;
   height: 66px;
   margin: 0 9px;
   padding: 19px 0px 19px;
@@ -511,7 +508,6 @@ header .menu ul li :hover {
   }
   .highlights .hl1 .hlText div a,
 .highlights .hl2 .hlText div a {
-    max-width: 308px;
     margin: 60px 0;
   }
 }
