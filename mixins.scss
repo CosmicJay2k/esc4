@@ -287,6 +287,20 @@
       }
     }
   }
+  @media screen and (max-width: 345px) {
+    .highlights{
+      .hl1, .hl2{
+        .hlText{
+          div{
+            width: 100%;
+            max-width: 300px;
+
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
 }
 
 @mixin mobileFooter {
