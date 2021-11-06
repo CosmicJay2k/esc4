@@ -411,6 +411,7 @@ header .menu ul li :hover {
   box-sizing: border-box;
   width: 308px;
   height: 66px;
+  max-width: 100%;
   padding: 16px 0px 22px;
   border: 2px solid #8acfe6;
   border-radius: 4px;
@@ -466,6 +467,7 @@ header .menu ul li :hover {
 .highlights .hl2 .hlText div a {
   display: flex;
   justify-content: center;
+  max-width: 100%;
   margin: 0;
   background: #e3170a;
   color: #ffffff;
