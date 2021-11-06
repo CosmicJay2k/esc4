@@ -427,6 +427,7 @@ header .menu ul li :hover {
 }
 .highlights .hl1 img,
 .highlights .hl2 img {
+  flex-shrink: 0;
   width: 50%;
   object-fit: cover;
 }
