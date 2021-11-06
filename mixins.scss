@@ -252,7 +252,6 @@
     .highlights {
       .hl1,
       .hl2 {
-        display: flex;
         flex-direction: column;
 
         height: 100%;
@@ -260,41 +259,29 @@
         img {
           width: 100%;
           height: 300px;
-          object-fit: cover;
         }
 
         .hlText {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-
           height: 100%;
           width: 100%;
 
           div {
-            box-sizing: border-box;
+            grid-column: 1 / -1;
             max-width: 100%;
 
             margin: 0 20px;
 
             h1 {
               margin: 30px 0 0 0;
-
-              font-size: 2.7rem;
             }
+
             p {
-              margin: 15px auto 25px auto;
-
-              font-size: 2rem;
+              margin: 30px auto 25px auto;
             }
-          }
-          a {
-            align-self: flex-start;
 
-            margin: 20px 20px 60px;
-
-            transform: translateX(0);
+            a {
+              margin: 60px 0;
+            }
           }
         }
       }

@@ -319,18 +319,12 @@ header {
     }
 
     .hlText {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      width: 50%;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
 
       div {
-        max-width: 416px;
-
-        margin: 0 20px;
-
+        grid-column: 2 / 6;
+        align-self: center;
         h1 {
           margin: 0 auto;
 
@@ -340,13 +334,16 @@ header {
         p {
           font-size: 2rem;
         }
-      }
-      @include mixins.button;
-      a {
-        background: #e3170a;
-        color: #ffffff;
 
-        transform: translateX(-17%);
+        @include mixins.button;
+        a {
+          display: flex;
+          justify-content: center;
+
+          margin: 0;
+          background: #e3170a;
+          color: #ffffff;
+        }
       }
     }
   }
