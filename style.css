@@ -206,7 +206,7 @@ header .menu ul li :hover {
 .quotes {
   display: flex;
   justify-content: center;
-  margin: 70px 0 0 0;
+  margin: 70px 20px 0 0;
 }
 .quotes img {
   width: 97px;
