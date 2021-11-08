@@ -33,9 +33,8 @@
         display: block;
         margin: 23px 20px;
 
-        max-width: 768px;
-
         background: #011827;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 
         animation-name: mobileMenuAni;
         animation-duration: 0.2s;
@@ -288,10 +287,11 @@
     }
   }
   @media screen and (max-width: 345px) {
-    .highlights{
-      .hl1, .hl2{
-        .hlText{
-          div{
+    .highlights {
+      .hl1,
+      .hl2 {
+        .hlText {
+          div {
             width: 100%;
             max-width: 300px;
 
