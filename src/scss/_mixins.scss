@@ -13,69 +13,83 @@
     text-align: center;
   }
 }
+@mixin fromMobileToDesktop{
+  @media screen and (min-width: 769px) {
+    header {
+      .modal{
+        display: block;
+      }
+    }
+  }
+}
 @mixin mobile {
   @media screen and (max-width: 768px) {
-    .modal {
-      display: none;
-      justify-content: center;
-      box-sizing: border-box;
-
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-
-      width: 100%;
-      height: 100%;
-
-      background: rgba(255, 255, 255, 0.5);
-      .menuBox {
+    header {
+      .mobMenuIcon{
         display: block;
-        margin: 3vh auto;
+      }
+      .modal {
+        display: none;
+        justify-content: center;
+        box-sizing: border-box;
 
-        width: 90%;
-        height: 93vh;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
 
-        background: #011827;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
 
-        animation-name: mobileMenuAni;
-        animation-duration: 0.2s;
-
-        .mobMenuClose {
+        background: rgba(255, 255, 255, 0.5);
+        .menuBox {
           display: block;
-          position: absolute;
-          right: 40px;
-          top: 40px;
+          margin: 3vh auto;
 
-          i {
-            font-size: 4rem;
-            color: #ffffff;
-            opacity: 0;
+          width: 90%;
+          height: 93vh;
 
-            animation-name: mobileMenuAni;
-            animation-duration: 0.2s;
-            animation-delay: 0.2s;
-            animation-fill-mode: forwards;
+          background: #011827;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
+          animation-name: mobileMenuAni;
+          animation-duration: 0.2s;
+
+          .mobMenuClose {
+            display: block;
+            position: absolute;
+            right: 40px;
+            top: 40px;
+
+            i {
+              font-size: 4rem;
+              color: #ffffff;
+              opacity: 0;
+
+              animation-name: mobileMenuAni;
+              animation-duration: 0.2s;
+              animation-delay: 0.2s;
+              animation-fill-mode: forwards;
+            }
           }
-        }
-        .mobMenu {
-          ul {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            padding: 25vh 0;
+          .mobMenu {
+            ul {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin: 0;
+              padding: 25vh 0;
 
-            list-style-type: none;
-            font-size: 3rem;
-            font-weight: bold;
+              list-style-type: none;
+              font-size: 3rem;
+              font-weight: bold;
 
-            li {
-              margin: 0 0 50px 0;
+              li {
+                margin: 0 0 50px 0;
 
-              a {
-                color: #ffffff;
+                a {
+                  color: #ffffff;
+                }
               }
             }
           }

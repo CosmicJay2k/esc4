@@ -34,7 +34,16 @@ header .logo h1 {
 header .mobMenuIcon {
   display: none;
 }
-header .menu ul {
+header .modal {
+  display: block;
+}
+header .modal .menuBox {
+  display: block;
+}
+header .modal .menuBox .mobMenuClose {
+  display: none;
+}
+header .modal .menuBox .menu ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
@@ -44,10 +53,10 @@ header .menu ul {
   font-size: 2rem;
   font-weight: bold;
 }
-header .menu ul li a {
+header .modal .menuBox .menu ul li a {
   color: #ffffff;
 }
-header .menu ul li :hover {
+header .modal .menuBox .menu ul li :hover {
   color: #8acfe5;
   transition: 0.3s;
 }
@@ -82,6 +91,11 @@ header .menu ul li :hover {
   }
   header .mobMenuIcon i {
     font-size: 4rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  header .modal {
+    display: block;
   }
 }
 .hero {
@@ -539,7 +553,10 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
-  .modal {
+  header .mobMenuIcon {
+    display: block;
+  }
+  header .modal {
     display: none;
     justify-content: center;
     box-sizing: border-box;
@@ -551,7 +568,7 @@ footer a {
     height: 100%;
     background: rgba(255, 255, 255, 0.5);
   }
-  .modal .menuBox {
+  header .modal .menuBox {
     display: block;
     margin: 3vh auto;
     width: 90%;
@@ -561,13 +578,13 @@ footer a {
     animation-name: mobileMenuAni;
     animation-duration: 0.2s;
   }
-  .modal .menuBox .mobMenuClose {
+  header .modal .menuBox .mobMenuClose {
     display: block;
     position: absolute;
     right: 40px;
     top: 40px;
   }
-  .modal .menuBox .mobMenuClose i {
+  header .modal .menuBox .mobMenuClose i {
     font-size: 4rem;
     color: #ffffff;
     opacity: 0;
@@ -576,7 +593,7 @@ footer a {
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
   }
-  .modal .menuBox .mobMenu ul {
+  header .modal .menuBox .mobMenu ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -586,10 +603,10 @@ footer a {
     font-size: 3rem;
     font-weight: bold;
   }
-  .modal .menuBox .mobMenu ul li {
+  header .modal .menuBox .mobMenu ul li {
     margin: 0 0 50px 0;
   }
-  .modal .menuBox .mobMenu ul li a {
+  header .modal .menuBox .mobMenu ul li a {
     color: #ffffff;
   }
 }
