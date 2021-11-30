@@ -13,7 +13,8 @@ export default function openMobileMenu() {
 
   window.onclick = function (e) {
     if (e.target == modal) {
-      modal.style.display = "none";
+      modal.removeAttribute('style');
+      document.querySelector('.mobMenu').setAttribute('class', 'menu');
     }
   }
 };
