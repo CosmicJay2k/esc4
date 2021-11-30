@@ -175,7 +175,7 @@ header {
 
       padding: 0 11px 0 17px;
 
-      background: url("src/images/hero.png");
+      background: url("../images/hero.png");
       background-size: 100%;
       background-repeat: no-repeat;
 
@@ -194,7 +194,7 @@ header {
         .stars {
           margin: 0 8px 0 0;
 
-          content: url("src/images/Star.png");
+          content: url("../images/Star.png");
           object-fit: contain;
         }
 
@@ -204,7 +204,7 @@ header {
 
         div {
           :nth-child(5) {
-            content: url("src/images/StarEmpty.png");
+            content: url("../images/StarEmpty.png");
           }
         }
 

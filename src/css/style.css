@@ -283,7 +283,7 @@ header .menu ul li :hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   padding: 0 11px 0 17px;
-  background: url("src/images/hero.png");
+  background: url("../images/hero.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -299,14 +299,14 @@ header .menu ul li :hover {
 }
 .popChall ul .popCard div .stars {
   margin: 0 8px 0 0;
-  content: url("src/images/Star.png");
+  content: url("../images/Star.png");
   object-fit: contain;
 }
 .popChall ul .popCard div p {
   margin: 0;
 }
 .popChall ul .popCard div div :nth-child(5) {
-  content: url("src/images/StarEmpty.png");
+  content: url("../images/StarEmpty.png");
 }
 .popChall ul .popCard div .players {
   font-size: 1.2rem;
