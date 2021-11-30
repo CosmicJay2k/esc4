@@ -1,0 +1,65 @@
+@use 'mixins';
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+  
+    padding: 150px 0;
+    margin: 182px 0 0 0;
+  
+    font-size: 1.5rem;
+  
+    background: #011827;
+    color: #ffffff;
+  
+    h1 {
+      margin: 7px 0;
+  
+      font-size: 1.5rem;
+    }
+  
+    .about {
+      display: flex;
+      flex-direction: column;
+  
+      margin: 0 20px;
+  
+      p {
+        max-width: 420px;
+  
+        margin: 0;
+  
+        font-weight: normal;
+      }
+    }
+  
+    .ftLinks {
+      display: flex;
+      justify-content: space-evenly;
+  
+      width: 40%;
+  
+      .sitemap {
+        display: flex;
+        flex-direction: column;
+  
+        margin: 0 20px;
+  
+        :nth-child(4) {
+          margin: 0 0 1.5rem 0;
+        }
+      }
+  
+      .social {
+        display: flex;
+        flex-direction: column;
+  
+        margin: 0 20px;
+      }
+    }
+  
+    a {
+      color: #ffffff;
+    }
+  }
+  @include mixins.mobileFooter;

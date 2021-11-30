@@ -1,0 +1,45 @@
+@use 'mixins';
+
+.quotes {
+    display: flex;
+    justify-content: center;
+  
+    margin: 70px 20px 0 0;
+  
+    img {
+      width: 97px;
+      height: 97px;
+      object-fit: cover;
+  
+      margin: 0 0 0 20px;
+      border-radius: 100%;
+    }
+  
+    .qText {
+      display: flex;
+      flex-direction: column;
+  
+      max-width: 408px;
+      margin: 0 0 0 15px;
+    }
+  
+    blockquote {
+      max-width: 407px;
+  
+      margin: 0;
+  
+      font-size: 2rem;
+      font-style: italic;
+  
+      p {
+        margin: 0 0 10px;
+      }
+    }
+    cite {
+      max-width: 285px;
+  
+      font-size: 1.5rem;
+      font-style: normal;
+    }
+  }
+  @include mixins.mobileQuotes;

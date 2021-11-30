@@ -1,0 +1,57 @@
+@use "mixins";
+
+header {
+    padding: 26px 27px 22px 27px;
+  
+    background: #011827;
+    color: #ffffff;
+  
+    .logo {
+      display: flex;
+      padding: 0 0 50px 0;
+  
+      img {
+        width: 128px;
+        height: 82px;
+      }
+  
+      h1 {
+        align-self: flex-end;
+  
+        margin: 0;
+        padding: 0 0 0 24px;
+  
+        font-size: 3.3rem;
+      }
+    }
+    .mobMenuIcon {
+      display: none;
+    }
+  
+    .menu {
+      ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+  
+        padding: 0;
+        margin: 0 90px;
+  
+        list-style-type: none;
+        font-size: 2rem;
+        font-weight: bold;
+  
+        li {
+          a {
+            color: #ffffff;
+          }
+  
+          :hover {
+            color: #8acfe5;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+  @include mixins.mobileHeader;

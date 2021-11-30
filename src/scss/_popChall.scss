@@ -1,0 +1,122 @@
+@use 'mixins';
+
+.popChall {
+    margin: 0;
+  
+    .heading {
+      margin: 100px 0 60px 0;
+  
+      font-size: 3rem;
+      text-align: center;
+    }
+  
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      gap: 30px;
+  
+      padding: 20px 53px;
+  
+      list-style-type: none;
+  
+      .popCard {
+        box-sizing: border-box;
+        flex-shrink: 0;
+  
+        width: 363px;
+        height: 446px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+  
+        padding: 0 11px 0 17px;
+  
+        background: url("../images/hero.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+  
+        .title {
+          margin: 0;
+          padding: 65% 0 0 0;
+  
+          font-size: 2.3rem;
+          font-weight: normal;
+        }
+  
+        div {
+          display: flex;
+          justify-content: space-between;
+  
+          .stars {
+            margin: 0 8px 0 0;
+  
+            content: url("../images/Star.png");
+            object-fit: contain;
+          }
+  
+          p {
+            margin: 0;
+          }
+  
+          div {
+            :nth-child(5) {
+              content: url("../images/StarEmpty.png");
+            }
+          }
+  
+          .players {
+            font-size: 1.2rem;
+          }
+        }
+  
+        .description {
+          padding: 8px 0 10px;
+  
+          font-size: 1.5rem;
+        }
+  
+        .book {
+          display: flex;
+          justify-content: flex-end;
+  
+          a {
+            box-sizing: border-box;
+  
+            width: 180px;
+            height: 44px;
+  
+            padding: 1rem 0;
+            border-radius: 4px;
+  
+            font-size: 1.3rem;
+            text-align: center;
+  
+            background: #e3170a;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  
+    .popLinks {
+      display: flex;
+      justify-content: center;
+  
+      @include mixins.button;
+      a {
+        margin: 70px 9px;
+      }
+  
+      a:nth-child(1) {
+        background: #e3170a;
+        color: #ffffff;
+      }
+  
+      a:nth-child(2) {
+        background: #8acfe5;
+        color: #000000;
+      }
+    }
+  }
+  @include mixins.mobilePopular;
