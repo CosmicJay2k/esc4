@@ -13,10 +13,10 @@
     text-align: center;
   }
 }
-@mixin fromMobileToDesktop{
+@mixin fromMobileToDesktop {
   @media screen and (min-width: 769px) {
     header {
-      .modal{
+      .modal {
         display: block;
       }
     }
@@ -25,7 +25,7 @@
 @mixin mobile {
   @media screen and (max-width: 768px) {
     header {
-      .mobMenuIcon{
+      .mobMenuIcon {
         display: block;
       }
       .modal {
@@ -46,6 +46,7 @@
           display: block;
           margin: 3vh auto;
 
+          position: relative;
           width: 90%;
           height: 93vh;
 
@@ -58,8 +59,8 @@
           .mobMenuClose {
             display: block;
             position: absolute;
-            right: 40px;
-            top: 40px;
+            right: 20px;
+            top: 20px;
 
             i {
               font-size: 4rem;

@@ -571,6 +571,7 @@ footer a {
   header .modal .menuBox {
     display: block;
     margin: 3vh auto;
+    position: relative;
     width: 90%;
     height: 93vh;
     background: #011827;
@@ -581,8 +582,8 @@ footer a {
   header .modal .menuBox .mobMenuClose {
     display: block;
     position: absolute;
-    right: 40px;
-    top: 40px;
+    right: 20px;
+    top: 20px;
   }
   header .modal .menuBox .mobMenuClose i {
     font-size: 4rem;
