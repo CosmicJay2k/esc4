@@ -223,6 +223,7 @@ header .modal .menuBox .menu ul li :hover {
 .popChall ul .popCard {
   box-sizing: border-box;
   flex-shrink: 0;
+  position: relative;
   width: 363px;
   height: 446px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -261,8 +262,9 @@ header .modal .menuBox .menu ul li :hover {
   font-size: 1.5rem;
 }
 .popChall ul .popCard .book {
-  display: flex;
-  justify-content: flex-end;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 .popChall ul .popCard .book a {
   box-sizing: border-box;
