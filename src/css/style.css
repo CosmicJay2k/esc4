@@ -319,6 +319,9 @@ header .modal .menuBox .menu ul li :hover {
     margin: 100px 0 45px 0;
     font-size: 2.7rem;
   }
+  .popChall ul {
+    padding: 4vw;
+  }
   .popChall ul .popCard div {
     justify-content: flex-start;
   }
