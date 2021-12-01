@@ -228,45 +228,55 @@ header .modal .menuBox .menu ul li :hover {
   height: 446px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  padding: 0 11px 0 17px;
-  background: url("../images/hero.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  overflow: hidden;
 }
-.popChall ul .popCard .title {
+.popChall ul .popCard .img-container {
+  height: 50%;
+}
+.popChall ul .popCard .img-container img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.popChall ul .popCard .text-container {
+  margin: 10px;
+}
+.popChall ul .popCard .text-container .title {
   margin: 0;
-  padding: 65% 0 0 0;
+  padding: 0;
   font-size: 2.3rem;
   font-weight: normal;
 }
-.popChall ul .popCard div {
+.popChall ul .popCard .text-container div {
   display: flex;
   justify-content: space-between;
 }
-.popChall ul .popCard div .stars {
-  margin: 0 8px 0 0;
+.popChall ul .popCard .text-container div .stars {
+  margin: 4px 8px 0 0;
   content: url("../images/Star.png");
   object-fit: contain;
 }
-.popChall ul .popCard div p {
+.popChall ul .popCard .text-container div p {
   margin: 0;
 }
-.popChall ul .popCard div div :nth-child(5) {
+.popChall ul .popCard .text-container div div :nth-child(5) {
   content: url("../images/StarEmpty.png");
 }
-.popChall ul .popCard div .players {
+.popChall ul .popCard .text-container div .players {
+  margin: 4px 0 0;
   font-size: 1.2rem;
 }
-.popChall ul .popCard .description {
+.popChall ul .popCard .text-container .description {
+  margin: 0;
   padding: 8px 0 10px;
   font-size: 1.5rem;
 }
-.popChall ul .popCard .book {
+.popChall ul .popCard .text-container .book {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
 }
-.popChall ul .popCard .book a {
+.popChall ul .popCard .text-container .book a {
   box-sizing: border-box;
   width: 180px;
   height: 44px;
