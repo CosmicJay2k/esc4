@@ -6,3 +6,7 @@ export function topThree (data) {
     render(dataSorted[i]);
   }
 }
+
+export function allChallenges (data) {
+  render(data);
+}
