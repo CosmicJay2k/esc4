@@ -1,27 +1,51 @@
-@use 'mixins';
+@use "mixins";
 
 .hero {
-    width: 100%;
-    height: 468px;
-    object-fit: cover;
-  }
-  
-  .heroLinks {
-    display: flex;
-    justify-content: center;
-  
-    transform: translateY(-55%);
+  width: 100%;
+  height: 468px;
+  object-fit: cover;
+}
 
-    
+.heroLinks {
+  display: flex;
+  justify-content: center;
+
+  transform: translateY(-55%);
+
+  a{
+    margin: 0 9px;
+  }
+  a:nth-child(1) {
+    @include mixins.button(#e3170a, #ffffff);
+  }
+
+  a:nth-child(2) {
+    @include mixins.button($bg: #8acfe5, $text: #000000);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 274px;
+  }
+
+  .heroLinks {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    transform: translateY(20%);
+
     a:nth-child(1) {
-      background: #e3170a;
-      color: #ffffff;
+      font-size: 1.3rem;
+      text-decoration: underline;
+
+      background: #ffffff;
+      color: #36769d;
     }
-    
+
     a:nth-child(2) {
       background: #8acfe5;
       color: #000000;
     }
-    @include mixins.button;
   }
-  @include mixins.mobileHero;
+}

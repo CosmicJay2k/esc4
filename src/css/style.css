@@ -80,9 +80,6 @@ header .modal .menuBox .menu ul li :hover {
     line-height: 2.4rem;
     font-size: 2.2rem;
   }
-  header .menu ul {
-    display: none;
-  }
   header .mobMenuIcon {
     display: block;
     position: absolute;
@@ -91,6 +88,73 @@ header .modal .menuBox .menu ul li :hover {
   }
   header .mobMenuIcon i {
     font-size: 4rem;
+  }
+  header .modal {
+    display: none;
+    justify-content: center;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  header .modal .menuBox {
+    display: block;
+    margin: 3vh auto;
+    position: relative;
+    width: 90%;
+    height: 93vh;
+    background: #011827;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    animation-name: mobileMenuAni;
+    animation-duration: 0.2s;
+  }
+  header .modal .menuBox .mobMenuClose {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  header .modal .menuBox .mobMenuClose i {
+    font-size: 4rem;
+    color: #ffffff;
+    opacity: 0;
+    animation-name: mobileMenuAni;
+    animation-duration: 0.2s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+  }
+  header .modal .menuBox .menu ul {
+    display: none;
+  }
+  header .modal .menuBox .mobMenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 25vh 0;
+    list-style-type: none;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  header .modal .menuBox .mobMenu ul li {
+    margin: 0 0 50px 0;
+  }
+  header .modal .menuBox .mobMenu ul li a {
+    color: #ffffff;
+  }
+}
+@keyframes mobileMenuAni {
+  0% {
+    transform: scale(90%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(100%);
+    opacity: 1;
   }
 }
 @media screen and (min-width: 769px) {
@@ -109,26 +173,38 @@ header .modal .menuBox .menu ul li :hover {
   justify-content: center;
   transform: translateY(-55%);
 }
-.heroLinks a:nth-child(1) {
-  background: #e3170a;
-  color: #ffffff;
-}
-.heroLinks a:nth-child(2) {
-  background: #8acfe5;
-  color: #000000;
-}
 .heroLinks a {
+  margin: 0 9px;
+}
+.heroLinks a:nth-child(1) {
   box-sizing: border-box;
   width: 308px;
   height: 66px;
-  margin: 0 9px;
   padding: 19px 0px 19px;
   border-radius: 4px;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
+  background: #e3170a;
+  color: #ffffff;
 }
-.heroLinks a:hover {
+.heroLinks a:nth-child(1):hover {
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+.heroLinks a:nth-child(2) {
+  box-sizing: border-box;
+  width: 308px;
+  height: 66px;
+  padding: 19px 0px 19px;
+  border-radius: 4px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  background: #8acfe5;
+  color: #000000;
+}
+.heroLinks a:nth-child(2):hover {
   color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
 }
@@ -194,16 +270,10 @@ header .modal .menuBox .menu ul li :hover {
   .quotes img {
     margin: 0;
   }
-  .quotes :nth-child(3) {
+  .quotes :nth-child(3), .quotes :nth-child(4) {
     display: none;
   }
-  .quotes :nth-child(4) {
-    display: none;
-  }
-  .quotes blockquote {
-    max-width: 342px;
-  }
-  .quotes cite {
+  .quotes blockquote, .quotes cite {
     max-width: 342px;
   }
 }
@@ -300,30 +370,38 @@ header .modal .menuBox .menu ul li :hover {
   justify-content: center;
 }
 .popChall .popLinks a:nth-child(1) {
-  background: #e3170a;
-  color: #ffffff;
-}
-.popChall .popLinks a:nth-child(2) {
-  background: #8acfe5;
-  color: #000000;
-}
-.popChall .popLinks a {
   box-sizing: border-box;
   width: 308px;
   height: 66px;
-  margin: 0 9px;
   padding: 19px 0px 19px;
   border-radius: 4px;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
+  background: #e3170a;
+  color: #ffffff;
+  margin: 70px 9px;
 }
-.popChall .popLinks a:hover {
+.popChall .popLinks a:nth-child(1):hover {
   color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
 }
-.popChall .popLinks a {
+.popChall .popLinks a:nth-child(2) {
+  box-sizing: border-box;
+  width: 308px;
+  height: 66px;
+  padding: 19px 0px 19px;
+  border-radius: 4px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  background: #8acfe5;
+  color: #000000;
   margin: 70px 9px;
+}
+.popChall .popLinks a:nth-child(2):hover {
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 768px) {
@@ -383,19 +461,17 @@ header .modal .menuBox .menu ul li :hover {
 }
 .shortStory a {
   max-width: 100%;
-  border: 2px solid #8acfe6;
-  color: #8acfe6;
-}
-.shortStory a {
   box-sizing: border-box;
   width: 308px;
   height: 66px;
-  margin: 0 9px;
   padding: 19px 0px 19px;
   border-radius: 4px;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
+  background: rgba(0, 0, 0, 0);
+  color: #8acfe6;
+  border: 2px solid #8acfe6;
 }
 .shortStory a:hover {
   color: rgba(255, 255, 255, 0.5);
@@ -434,29 +510,25 @@ header .modal .menuBox .menu ul li :hover {
 }
 .highlights .hl1 .hlText div a,
 .highlights .hl2 .hlText div a {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0;
   box-sizing: border-box;
   width: 308px;
   height: 66px;
-  margin: 0 9px;
   padding: 19px 0px 19px;
   border-radius: 4px;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
+  background: #e3170a;
+  color: #ffffff;
 }
 .highlights .hl1 .hlText div a:hover,
 .highlights .hl2 .hlText div a:hover {
   color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
-}
-.highlights .hl1 .hlText div a,
-.highlights .hl2 .hlText div a {
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-  margin: 0;
-  background: #e3170a;
-  color: #ffffff;
 }
 .highlights .hl2 {
   flex-direction: row-reverse;
@@ -585,79 +657,6 @@ footer a {
     display: flex;
     flex-direction: column;
     margin: 0 20px;
-  }
-}
-.menuBox {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  header .mobMenuIcon {
-    display: block;
-  }
-  header .modal {
-    display: none;
-    justify-content: center;
-    box-sizing: border-box;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5);
-  }
-  header .modal .menuBox {
-    display: block;
-    margin: 3vh auto;
-    position: relative;
-    width: 90%;
-    height: 93vh;
-    background: #011827;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    animation-name: mobileMenuAni;
-    animation-duration: 0.2s;
-  }
-  header .modal .menuBox .mobMenuClose {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
-  header .modal .menuBox .mobMenuClose i {
-    font-size: 4rem;
-    color: #ffffff;
-    opacity: 0;
-    animation-name: mobileMenuAni;
-    animation-duration: 0.2s;
-    animation-delay: 0.2s;
-    animation-fill-mode: forwards;
-  }
-  header .modal .menuBox .mobMenu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 25vh 0;
-    list-style-type: none;
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  header .modal .menuBox .mobMenu ul li {
-    margin: 0 0 50px 0;
-  }
-  header .modal .menuBox .mobMenu ul li a {
-    color: #ffffff;
-  }
-}
-@keyframes mobileMenuAni {
-  0% {
-    transform: scale(90%);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(100%);
-    opacity: 1;
   }
 }
 

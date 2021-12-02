@@ -7,8 +7,3 @@
 @use 'highlights';
 @use 'footer';
 @use 'mixins';
-
-.menuBox {
-  display: none;
-}
-@include mixins.mobile;

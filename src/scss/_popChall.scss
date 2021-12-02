@@ -17,7 +17,7 @@
     gap: 30px;
 
     overflow-x: auto;
-    
+
     padding: 20px 53px;
 
     list-style-type: none;
@@ -123,19 +123,69 @@
     justify-content: center;
     
     a:nth-child(1) {
-      background: #e3170a;
-      color: #ffffff;
-    }
-    
-    a:nth-child(2) {
-      background: #8acfe5;
-      color: #000000;
-    }
-    @include mixins.button;
-    
-    a {
+      @include mixins.button(#e3170a, #ffffff);
       margin: 70px 9px;
+    }
+
+    a:nth-child(2) {
+      @include mixins.button(#8acfe5, #000000);
+      margin: 70px 9px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popChall {
+    .heading {
+      margin: 100px 0 45px 0;
+
+      font-size: 2.7rem;
+    }
+
+    ul {
+      padding: 4vw;
+
+      .popCard {
+        div {
+          justify-content: flex-start;
+
+          .players {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+    }
+
+    .popLinks {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      padding: 10px 0 20px;
+
+      a:nth-child(1) {
+        margin: 10px 0;
+
+        font-size: 1.3rem;
+        text-decoration: underline;
+
+        background: #ffffff;
+        color: #36769d;
+      }
+
+      a:nth-child(2) {
+        margin: 0px;
+
+        background: #8acfe5;
+        color: #000000;
+      }
     }
   }
 }
-@include mixins.mobilePopular;
+@media screen and (max-width: 1170px) {
+  .popChall {
+    ul {
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,35 +1,35 @@
-@use 'mixins';
+@use "mixins";
 
 .shortStory {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-    box-sizing: border-box;
-    width: 100%;
-    height: 500px;
-  
-    background: #011827;
-  
-    p {
-      max-width: 600px;
-  
-      padding: 0 20px;
-      margin: 0 0 40px 0;
-  
-      font-size: 2.3rem;
-      text-align: center;
-  
-      color: #ffffff;
-    }
-  
-    a {
-      max-width: 100%;
-  
-      border: 2px solid #8acfe6;
-  
-      color: #8acfe6;
-    }
-    @include mixins.button;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 500px;
+
+  background: #011827;
+
+  p {
+    max-width: 600px;
+
+    padding: 0 20px;
+    margin: 0 0 40px 0;
+
+    font-size: 2.3rem;
+    text-align: center;
+
+    color: #ffffff;
   }
+
+  a {
+    max-width: 100%;
+    
+    @include mixins.button(rgba(0,0,0,0), #8acfe6);
+    border: 2px solid #8acfe6;
+
+    //color: #8acfe6;
+  }
+}
