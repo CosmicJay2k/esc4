@@ -1,8 +1,13 @@
-export default function render(data) {
+import { setStarsInRating } from "./renderStars.js";
+
+export default function render(data, idOfCard) {
   const list = document.querySelector('.popList');
 
   const newItem = document.createElement('li');
+  newItem.setAttribute("id", "id" + idOfCard);
   newItem.setAttribute('class', 'card');
+
+  data.labels.forEach(label => newItem.classList.add(`${label}`));
 
   newItem.innerHTML = `
     <div class="img-container">
@@ -11,14 +16,13 @@ export default function render(data) {
     <div class="text-container">
       <h2 class="title">${data.title} (${data.type})</h2>
       <div>
-        <div>
-          <p class="stars"></p>
-          <p class="stars"></p>
-          <p class="stars"></p>
-          <p class="stars"></p>
-          <p class="stars"></p>
-          <p>${data.rating}</p>
-        </div>
+        <ul class="rating-stars">
+          <li>&#9733;</li>
+          <li>&#9733;</li>
+          <li>&#9733;</li>
+          <li>&#9733;</li>
+          <li>&#9733;</li>
+        </ul>
         <p class="players">${data.minParticipants} - ${data.maxParticipants} participants</p>
       </div>
       <p class="description">${data.description}</p>
@@ -26,7 +30,8 @@ export default function render(data) {
         <a href="#">Book this room</a>
       </div>
     </div>
-  `
-
+  `;
+  
   list.appendChild(newItem);
+  setStarsInRating(idOfCard, data.rating);
 }

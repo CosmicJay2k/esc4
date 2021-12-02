@@ -401,16 +401,21 @@ header .modal .menuBox .menu ul li :hover {
   display: flex;
   justify-content: space-between;
 }
-.card .text-container div .stars {
-  margin: 4px 8px 0 0;
-  content: url("../images/Star.png");
-  object-fit: contain;
+.card .text-container div .rating-stars {
+  padding: 0;
+  font-size: 1.2rem;
+}
+.card .text-container div .rating-stars li {
+  margin: 4px 0 0;
+  color: #ffffff;
+  -webkit-text-stroke: 1px #000000;
+}
+.card .text-container div .rating-stars li.checked {
+  color: #e3170a;
+  -webkit-text-stroke: 1px #e3170a;
 }
 .card .text-container div p {
   margin: 0;
-}
-.card .text-container div div :nth-child(5) {
-  content: url("../images/StarEmpty.png");
 }
 .card .text-container div .players {
   margin: 4px 0 0;

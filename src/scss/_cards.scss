@@ -34,21 +34,25 @@
       display: flex;
       justify-content: space-between;
 
-      .stars {
-        margin: 4px 8px 0 0;
+      .rating-stars {
+        padding: 0;
 
-        content: url("../images/Star.png");
-        object-fit: contain;
+        font-size: 1.2rem;
+
+        li{
+          margin: 4px 0 0;
+          
+          color:#ffffff;
+          -webkit-text-stroke: 1px #000000;
+        }
+        li.checked{
+          color:#e3170a;
+          -webkit-text-stroke: 1px #e3170a;
+        }
       }
 
       p {
         margin: 0;
-      }
-
-      div {
-        :nth-child(5) {
-          content: url("../images/StarEmpty.png");
-        }
       }
 
       .players {
