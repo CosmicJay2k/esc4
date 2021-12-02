@@ -3,7 +3,9 @@
 @use 'hero';
 @use 'quotes';
 @use 'popChall';
+@use 'cards';
 @use 'shortStory';
 @use 'highlights';
 @use 'footer';
 @use 'mixins';
+@use './challenges.html/challengesSection';

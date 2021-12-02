@@ -2,7 +2,7 @@ export default function render(data) {
   const list = document.querySelector('.popList');
 
   const newItem = document.createElement('li');
-  newItem.setAttribute('class', 'popCard');
+  newItem.setAttribute('class', 'card');
 
   newItem.innerHTML = `
     <div class="img-container">

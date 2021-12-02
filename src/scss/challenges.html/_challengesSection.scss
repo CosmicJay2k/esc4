@@ -1,0 +1,21 @@
+@use "../mixins";
+
+.challengesSection {
+  margin: 0;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    overflow-x: auto;
+
+    padding: 20px 53px;
+
+    list-style-type: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}

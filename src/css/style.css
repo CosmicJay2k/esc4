@@ -294,77 +294,6 @@ header .modal .menuBox .menu ul li :hover {
   padding: 20px 53px;
   list-style-type: none;
 }
-.popChall ul .popCard {
-  box-sizing: border-box;
-  flex-shrink: 0;
-  position: relative;
-  width: 363px;
-  height: 446px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  overflow: hidden;
-}
-.popChall ul .popCard .img-container {
-  height: 50%;
-}
-.popChall ul .popCard .img-container img {
-  width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}
-.popChall ul .popCard .text-container {
-  margin: 10px;
-}
-.popChall ul .popCard .text-container .title {
-  margin: 0;
-  padding: 0;
-  font-size: 2.3rem;
-  font-weight: normal;
-}
-.popChall ul .popCard .text-container div {
-  display: flex;
-  justify-content: space-between;
-}
-.popChall ul .popCard .text-container div .stars {
-  margin: 4px 8px 0 0;
-  content: url("../images/Star.png");
-  object-fit: contain;
-}
-.popChall ul .popCard .text-container div p {
-  margin: 0;
-}
-.popChall ul .popCard .text-container div div :nth-child(5) {
-  content: url("../images/StarEmpty.png");
-}
-.popChall ul .popCard .text-container div .players {
-  margin: 4px 0 0;
-  font-size: 1.2rem;
-}
-.popChall ul .popCard .text-container .description {
-  margin: 0;
-  padding: 8px 0 10px;
-  font-size: 1.5rem;
-}
-.popChall ul .popCard .text-container .book {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-.popChall ul .popCard .text-container .book a {
-  box-sizing: border-box;
-  width: 180px;
-  height: 44px;
-  padding: 1rem 0;
-  border-radius: 4px;
-  font-size: 1.3rem;
-  text-align: center;
-  background: #e3170a;
-  color: #ffffff;
-}
-.popChall ul .popCard .text-container .book a:hover {
-  background: rgba(0, 0, 0, 0.7);
-  transition: 0.3s;
-}
 .popChall .popLinks {
   display: flex;
   justify-content: center;
@@ -441,6 +370,78 @@ header .modal .menuBox .menu ul li :hover {
     justify-content: space-between;
   }
 }
+.card {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  position: relative;
+  width: 363px;
+  height: 446px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card .img-container {
+  height: 50%;
+}
+.card .img-container img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.card .text-container {
+  margin: 10px;
+}
+.card .text-container .title {
+  margin: 0;
+  padding: 0;
+  font-size: 2.3rem;
+  font-weight: normal;
+}
+.card .text-container div {
+  display: flex;
+  justify-content: space-between;
+}
+.card .text-container div .stars {
+  margin: 4px 8px 0 0;
+  content: url("../images/Star.png");
+  object-fit: contain;
+}
+.card .text-container div p {
+  margin: 0;
+}
+.card .text-container div div :nth-child(5) {
+  content: url("../images/StarEmpty.png");
+}
+.card .text-container div .players {
+  margin: 4px 0 0;
+  font-size: 1.2rem;
+}
+.card .text-container .description {
+  margin: 0;
+  padding: 8px 0 10px;
+  font-size: 1.5rem;
+}
+.card .text-container .book {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.card .text-container .book a {
+  box-sizing: border-box;
+  width: 180px;
+  height: 44px;
+  padding: 1rem 0;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  text-align: center;
+  background: #e3170a;
+  color: #ffffff;
+}
+.card .text-container .book a:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+}
+
 .shortStory {
   display: flex;
   flex-direction: column;
@@ -662,6 +663,18 @@ footer a:hover {
     flex-direction: column;
     margin: 0 20px;
   }
+}
+.challengesSection {
+  margin: 0;
+}
+.challengesSection ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 20px 53px;
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=style.css.map */
