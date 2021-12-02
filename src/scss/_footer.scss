@@ -58,6 +58,11 @@ footer {
 
   a {
     color: #ffffff;
+
+    &:hover {
+      color: #8acfe5;
+      transition: 0.3s;
+    }
   }
 }
 
