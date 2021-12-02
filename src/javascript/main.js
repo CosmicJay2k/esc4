@@ -2,14 +2,15 @@ import { allChallenges, topThree } from "./drawChallenges.js";
 import fetchData from "./fetchData.js";
 import openMobileMenu from "./mobMenu.js";
 
+const body = document.querySelector('body');
 const data = await fetchData();
 
 openMobileMenu();
 
-if (document.querySelector('.index.html')){
+if (body.className == 'index.html'){
   topThree(data);
 }
 
-if (document.querySelector('.challenges.html')){
+if (body.className == 'challenges.html'){
   allChallenges(data);
 }

@@ -8,5 +8,8 @@ export function topThree (data) {
 }
 
 export function allChallenges (data) {
-  render(data);
+  data.forEach(data => {
+    console.log('h')
+    render(data);
+  })
 }
