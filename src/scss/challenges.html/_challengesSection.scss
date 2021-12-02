@@ -1,17 +1,15 @@
 @use "../mixins";
 
 .challengesSection {
-  margin: 0;
+  margin: 30px;
 
   ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
 
-    overflow-x: auto;
-
-    padding: 20px 53px;
+    padding: 10px 0;
 
     list-style-type: none;
   }

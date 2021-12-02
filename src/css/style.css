@@ -665,15 +665,14 @@ footer a:hover {
   }
 }
 .challengesSection {
-  margin: 0;
+  margin: 30px;
 }
 .challengesSection ul {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 30px;
-  overflow-x: auto;
-  padding: 20px 53px;
+  gap: 20px;
+  padding: 10px 0;
   list-style-type: none;
 }
 
