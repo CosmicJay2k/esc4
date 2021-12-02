@@ -11,17 +11,17 @@
     justify-content: center;
   
     transform: translateY(-55%);
-  
-    @include mixins.button;
-  
+
+    
     a:nth-child(1) {
       background: #e3170a;
       color: #ffffff;
     }
-  
+    
     a:nth-child(2) {
       background: #8acfe5;
       color: #000000;
     }
+    @include mixins.button;
   }
   @include mixins.mobileHero;

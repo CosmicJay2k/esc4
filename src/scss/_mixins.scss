@@ -12,7 +12,13 @@
     font-weight: bold;
     text-align: center;
   }
+
+  a:hover {
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+  }
 }
+
 @mixin fromMobileToDesktop {
   @media screen and (min-width: 769px) {
     header {
@@ -22,6 +28,7 @@
     }
   }
 }
+
 @mixin mobile {
   @media screen and (max-width: 768px) {
     header {
@@ -42,6 +49,7 @@
         height: 100%;
 
         background: rgba(255, 255, 255, 0.5);
+
         .menuBox {
           display: block;
           margin: 3vh auto;
@@ -73,6 +81,7 @@
               animation-fill-mode: forwards;
             }
           }
+
           .mobMenu {
             ul {
               display: flex;
@@ -98,6 +107,7 @@
       }
     }
   }
+
   @keyframes mobileMenuAni {
     0% {
       transform: scale(90%);
@@ -109,6 +119,7 @@
     }
   }
 }
+
 @mixin mobileHeader {
   @media screen and (max-width: 768px) {
     header {
@@ -219,11 +230,14 @@
 
         font-size: 2.7rem;
       }
+
       ul {
         padding: 4vw;
+
         .popCard {
           div {
             justify-content: flex-start;
+            
             .players {
               margin: 0 0 0 10px;
             }

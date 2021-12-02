@@ -13,10 +13,11 @@
   ul {
     display: flex;
     justify-content: space-evenly;
-    overflow-x: auto;
     flex-wrap: nowrap;
     gap: 30px;
 
+    overflow-x: auto;
+    
     padding: 20px 53px;
 
     list-style-type: none;
@@ -107,6 +108,11 @@
             background: #e3170a;
             color: #ffffff;
           }
+
+          a:hover {
+            background: rgba(0, 0, 0, 0.7);
+            transition: 0.3s;
+          }
         }
       }
     }
@@ -115,20 +121,20 @@
   .popLinks {
     display: flex;
     justify-content: center;
-
-    @include mixins.button;
-    a {
-      margin: 70px 9px;
-    }
-
+    
     a:nth-child(1) {
       background: #e3170a;
       color: #ffffff;
     }
-
+    
     a:nth-child(2) {
       background: #8acfe5;
       color: #000000;
+    }
+    @include mixins.button;
+    
+    a {
+      margin: 70px 9px;
     }
   }
 }
