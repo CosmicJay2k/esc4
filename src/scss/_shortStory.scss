@@ -1,6 +1,6 @@
 @use "mixins";
 
-.shortStory {
+.story-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +29,5 @@
     
     @include mixins.button(rgba(0,0,0,0), #8acfe6);
     border: 2px solid #8acfe6;
-
-    //color: #8acfe6;
   }
 }

@@ -1,8 +1,8 @@
 @use "mixins";
 
-.highlights {
-  .hl1,
-  .hl2 {
+.highlights-section {
+  .hl1-container,
+  .hl2-container {
     display: flex;
 
     height: 460px;
@@ -14,7 +14,7 @@
       object-fit: cover;
     }
 
-    .hlText {
+    .hl-text-container {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
 
@@ -44,15 +44,15 @@
     }
   }
 
-  .hl2 {
+  .hl2-container {
     flex-direction: row-reverse;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .highlights {
-    .hl1,
-    .hl2 {
+  .highlights-section {
+    .hl1-container,
+    .hl2-container {
       flex-direction: column;
 
       height: 100%;
@@ -62,7 +62,7 @@
         height: 300px;
       }
 
-      .hlText {
+      .hl-text-container {
         height: 100%;
         width: 100%;
 
@@ -90,10 +90,10 @@
 }
 
 @media screen and (max-width: 345px) {
-  .highlights {
-    .hl1,
-    .hl2 {
-      .hlText {
+  .highlights-section {
+    .hl1-container,
+    .hl2-container {
+      .hl-text-container {
         div {
           width: 100%;
           max-width: 300px;

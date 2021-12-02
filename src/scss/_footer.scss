@@ -16,7 +16,7 @@ footer {
     font-size: 1.5rem;
   }
 
-  .about {
+  .about-container {
     display: flex;
     flex-direction: column;
 
@@ -31,13 +31,13 @@ footer {
     }
   }
 
-  .ftLinks {
+  .footer-links-container {
     display: flex;
     justify-content: space-evenly;
 
     width: 40%;
 
-    .sitemap {
+    .sitemap-container {
       display: flex;
       flex-direction: column;
 
@@ -48,7 +48,7 @@ footer {
       }
     }
 
-    .social {
+    .socials-container {
       display: flex;
       flex-direction: column;
 
@@ -81,7 +81,7 @@ footer {
       font-size: 1.5rem;
     }
 
-    .about {
+    .about-container {
       display: flex;
       flex-direction: column;
 
@@ -94,19 +94,19 @@ footer {
       }
     }
 
-    .ftLinks {
+    .footer-links-container {
       display: flex;
       flex-direction: column;
       gap: 47px;
 
-      .sitemap {
+      .sitemap-container {
         display: flex;
         flex-direction: column;
 
         margin: 0 20px;
       }
 
-      .social {
+      .socials-container {
         display: flex;
         flex-direction: column;
 

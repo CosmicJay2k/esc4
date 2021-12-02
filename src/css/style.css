@@ -17,33 +17,33 @@ header {
   background: #011827;
   color: #ffffff;
 }
-header .logo {
+header .logo-container {
   display: flex;
   padding: 0 0 50px 0;
 }
-header .logo img {
+header .logo-container img {
   width: 128px;
   height: 82px;
 }
-header .logo h1 {
+header .logo-container h1 {
   align-self: flex-end;
   margin: 0;
   padding: 0 0 0 24px;
   font-size: 3.3rem;
 }
-header .mobMenuIcon {
+header .open-container {
   display: none;
 }
 header .modal {
   display: block;
 }
-header .modal .menuBox {
+header .modal .menu-container {
   display: block;
 }
-header .modal .menuBox .mobMenuClose {
+header .modal .menu-container .close-container {
   display: none;
 }
-header .modal .menuBox .menu ul {
+header .modal .menu-container .menu-list-container ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
@@ -53,10 +53,10 @@ header .modal .menuBox .menu ul {
   font-size: 2rem;
   font-weight: bold;
 }
-header .modal .menuBox .menu ul li a {
+header .modal .menu-container .menu-list-container ul li a {
   color: #ffffff;
 }
-header .modal .menuBox .menu ul li :hover {
+header .modal .menu-container .menu-list-container ul li :hover {
   color: #8acfe5;
   transition: 0.3s;
 }
@@ -66,27 +66,27 @@ header .modal .menuBox .menu ul li :hover {
     position: relative;
     padding: 26px 27px 36px 27px;
   }
-  header .logo {
+  header .logo-container {
     display: flex;
     padding: 0;
   }
-  header .logo img {
+  header .logo-container img {
     width: 128px;
     height: 82px;
   }
-  header .logo h1 {
+  header .logo-container h1 {
     width: 80px;
     padding: 0 0 0 13px;
     line-height: 2.4rem;
     font-size: 2.2rem;
   }
-  header .mobMenuIcon {
+  header .open-container {
     display: block;
     position: absolute;
     right: 20px;
     top: 26px;
   }
-  header .mobMenuIcon i {
+  header .open-container i {
     font-size: 4rem;
   }
   header .modal {
@@ -101,7 +101,7 @@ header .modal .menuBox .menu ul li :hover {
     height: 100%;
     background: rgba(255, 255, 255, 0.5);
   }
-  header .modal .menuBox {
+  header .modal .menu-container {
     display: block;
     margin: 3vh auto;
     position: relative;
@@ -112,13 +112,13 @@ header .modal .menuBox .menu ul li :hover {
     animation-name: mobileMenuAni;
     animation-duration: 0.2s;
   }
-  header .modal .menuBox .mobMenuClose {
+  header .modal .menu-container .close-container {
     display: block;
     position: absolute;
     right: 20px;
     top: 20px;
   }
-  header .modal .menuBox .mobMenuClose i {
+  header .modal .menu-container .close-container i {
     font-size: 4rem;
     color: #ffffff;
     opacity: 0;
@@ -127,10 +127,10 @@ header .modal .menuBox .menu ul li :hover {
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
   }
-  header .modal .menuBox .menu ul {
+  header .modal .menu-container .menu-list-container ul {
     display: none;
   }
-  header .modal .menuBox .mobMenu ul {
+  header .modal .menu-container .mobile-menu ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,10 +140,10 @@ header .modal .menuBox .menu ul li :hover {
     font-size: 3rem;
     font-weight: bold;
   }
-  header .modal .menuBox .mobMenu ul li {
+  header .modal .menu-container .mobile-menu ul li {
     margin: 0 0 50px 0;
   }
-  header .modal .menuBox .mobMenu ul li a {
+  header .modal .menu-container .mobile-menu ul li a {
     color: #ffffff;
   }
 }
@@ -168,15 +168,15 @@ header .modal .menuBox .menu ul li :hover {
   object-fit: cover;
 }
 
-.heroLinks {
+.hero-links-container {
   display: flex;
   justify-content: center;
   transform: translateY(-55%);
 }
-.heroLinks a {
+.hero-links-container a {
   margin: 0 9px;
 }
-.heroLinks a:nth-child(1) {
+.hero-links-container a:nth-child(1) {
   box-sizing: border-box;
   width: 308px;
   height: 66px;
@@ -188,11 +188,11 @@ header .modal .menuBox .menu ul li :hover {
   background: #e3170a;
   color: #ffffff;
 }
-.heroLinks a:nth-child(1):hover {
+.hero-links-container a:nth-child(1):hover {
   color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
 }
-.heroLinks a:nth-child(2) {
+.hero-links-container a:nth-child(2) {
   box-sizing: border-box;
   width: 308px;
   height: 66px;
@@ -204,7 +204,7 @@ header .modal .menuBox .menu ul li :hover {
   background: #8acfe5;
   color: #000000;
 }
-.heroLinks a:nth-child(2):hover {
+.hero-links-container a:nth-child(2):hover {
   color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
 }
@@ -214,78 +214,78 @@ header .modal .menuBox .menu ul li :hover {
     height: 274px;
   }
 
-  .heroLinks {
+  .hero-links-container {
     flex-direction: column-reverse;
     align-items: center;
     transform: translateY(20%);
   }
-  .heroLinks a:nth-child(1) {
+  .hero-links-container a:nth-child(1) {
     font-size: 1.3rem;
     text-decoration: underline;
     background: #ffffff;
     color: #36769d;
   }
-  .heroLinks a:nth-child(2) {
+  .hero-links-container a:nth-child(2) {
     background: #8acfe5;
     color: #000000;
   }
 }
-.quotes {
+.quotes-section {
   display: flex;
   justify-content: center;
   margin: 70px 20px 0 0;
 }
-.quotes img {
+.quotes-section img {
   width: 97px;
   height: 97px;
   object-fit: cover;
   margin: 0 0 0 20px;
   border-radius: 100%;
 }
-.quotes .qText {
+.quotes-section .qoutes-text-container {
   display: flex;
   flex-direction: column;
   max-width: 408px;
   margin: 0 0 0 15px;
 }
-.quotes blockquote {
+.quotes-section blockquote {
   max-width: 407px;
   margin: 0;
   font-size: 2rem;
   font-style: italic;
 }
-.quotes blockquote p {
+.quotes-section blockquote p {
   margin: 0 0 10px;
 }
-.quotes cite {
+.quotes-section cite {
   max-width: 285px;
   font-size: 1.5rem;
   font-style: normal;
 }
 
 @media screen and (max-width: 768px) {
-  .quotes {
+  .quotes-section {
     margin: 70px 20px 0 20px;
   }
-  .quotes img {
+  .quotes-section img {
     margin: 0;
   }
-  .quotes :nth-child(3), .quotes :nth-child(4) {
+  .quotes-section :nth-child(3), .quotes-section :nth-child(4) {
     display: none;
   }
-  .quotes blockquote, .quotes cite {
+  .quotes-section blockquote, .quotes-section cite {
     max-width: 342px;
   }
 }
-.popChall {
+.popular-challenges {
   margin: 0;
 }
-.popChall .heading {
+.popular-challenges .heading {
   margin: 100px 0 60px 0;
   font-size: 3rem;
   text-align: center;
 }
-.popChall ul {
+.popular-challenges ul {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: nowrap;
@@ -294,11 +294,11 @@ header .modal .menuBox .menu ul li :hover {
   padding: 20px 53px;
   list-style-type: none;
 }
-.popChall .popLinks {
+.popular-challenges .popular-links {
   display: flex;
   justify-content: center;
 }
-.popChall .popLinks a:nth-child(1) {
+.popular-challenges .popular-links a:nth-child(1) {
   box-sizing: border-box;
   width: 308px;
   height: 66px;
@@ -311,11 +311,11 @@ header .modal .menuBox .menu ul li :hover {
   color: #ffffff;
   margin: 70px 9px;
 }
-.popChall .popLinks a:nth-child(1):hover {
+.popular-challenges .popular-links a:nth-child(1):hover {
   color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
 }
-.popChall .popLinks a:nth-child(2) {
+.popular-challenges .popular-links a:nth-child(2) {
   box-sizing: border-box;
   width: 308px;
   height: 66px;
@@ -328,45 +328,45 @@ header .modal .menuBox .menu ul li :hover {
   color: #000000;
   margin: 70px 9px;
 }
-.popChall .popLinks a:nth-child(2):hover {
+.popular-challenges .popular-links a:nth-child(2):hover {
   color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
 }
 
 @media screen and (max-width: 768px) {
-  .popChall .heading {
+  .popular-challenges .heading {
     margin: 100px 0 45px 0;
     font-size: 2.7rem;
   }
-  .popChall ul {
+  .popular-challenges ul {
     padding: 4vw;
   }
-  .popChall ul .popCard div {
+  .popular-challenges ul .card div {
     justify-content: flex-start;
   }
-  .popChall ul .popCard div .players {
+  .popular-challenges ul .card div .players {
     margin: 0 0 0 10px;
   }
-  .popChall .popLinks {
+  .popular-challenges .popular-links {
     flex-direction: column-reverse;
     align-items: center;
     padding: 10px 0 20px;
   }
-  .popChall .popLinks a:nth-child(1) {
+  .popular-challenges .popular-links a:nth-child(1) {
     margin: 10px 0;
     font-size: 1.3rem;
     text-decoration: underline;
     background: #ffffff;
     color: #36769d;
   }
-  .popChall .popLinks a:nth-child(2) {
+  .popular-challenges .popular-links a:nth-child(2) {
     margin: 0px;
     background: #8acfe5;
     color: #000000;
   }
 }
 @media screen and (max-width: 1170px) {
-  .popChall ul {
+  .popular-challenges ul {
     justify-content: space-between;
   }
 }
@@ -426,12 +426,12 @@ header .modal .menuBox .menu ul li :hover {
   padding: 8px 0 10px;
   font-size: 1.5rem;
 }
-.card .text-container .book {
+.card .text-container .book-container {
   position: absolute;
   bottom: 10px;
   right: 10px;
 }
-.card .text-container .book a {
+.card .text-container .book-container a {
   box-sizing: border-box;
   width: 180px;
   height: 44px;
@@ -442,12 +442,12 @@ header .modal .menuBox .menu ul li :hover {
   background: #e3170a;
   color: #ffffff;
 }
-.card .text-container .book a:hover {
+.card .text-container .book-container a:hover {
   background: rgba(0, 0, 0, 0.7);
   transition: 0.3s;
 }
 
-.shortStory {
+.story-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -457,7 +457,7 @@ header .modal .menuBox .menu ul li :hover {
   height: 500px;
   background: #011827;
 }
-.shortStory p {
+.story-section p {
   max-width: 600px;
   padding: 0 20px;
   margin: 0 0 40px 0;
@@ -465,7 +465,7 @@ header .modal .menuBox .menu ul li :hover {
   text-align: center;
   color: #ffffff;
 }
-.shortStory a {
+.story-section a {
   max-width: 100%;
   box-sizing: border-box;
   width: 308px;
@@ -479,43 +479,43 @@ header .modal .menuBox .menu ul li :hover {
   color: #8acfe6;
   border: 2px solid #8acfe6;
 }
-.shortStory a:hover {
+.story-section a:hover {
   color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
 }
 
-.highlights .hl1,
-.highlights .hl2 {
+.highlights-section .hl1-container,
+.highlights-section .hl2-container {
   display: flex;
   height: 460px;
 }
-.highlights .hl1 img,
-.highlights .hl2 img {
+.highlights-section .hl1-container img,
+.highlights-section .hl2-container img {
   flex-shrink: 0;
   width: 50%;
   object-fit: cover;
 }
-.highlights .hl1 .hlText,
-.highlights .hl2 .hlText {
+.highlights-section .hl1-container .hl-text-container,
+.highlights-section .hl2-container .hl-text-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
-.highlights .hl1 .hlText div,
-.highlights .hl2 .hlText div {
+.highlights-section .hl1-container .hl-text-container div,
+.highlights-section .hl2-container .hl-text-container div {
   grid-column: 2/6;
   align-self: center;
 }
-.highlights .hl1 .hlText div h1,
-.highlights .hl2 .hlText div h1 {
+.highlights-section .hl1-container .hl-text-container div h1,
+.highlights-section .hl2-container .hl-text-container div h1 {
   margin: 0 auto;
   font-size: 2.7rem;
 }
-.highlights .hl1 .hlText div p,
-.highlights .hl2 .hlText div p {
+.highlights-section .hl1-container .hl-text-container div p,
+.highlights-section .hl2-container .hl-text-container div p {
   font-size: 2rem;
 }
-.highlights .hl1 .hlText div a,
-.highlights .hl2 .hlText div a {
+.highlights-section .hl1-container .hl-text-container div a,
+.highlights-section .hl2-container .hl-text-container div a {
   display: flex;
   justify-content: center;
   max-width: 100%;
@@ -531,53 +531,53 @@ header .modal .menuBox .menu ul li :hover {
   background: #e3170a;
   color: #ffffff;
 }
-.highlights .hl1 .hlText div a:hover,
-.highlights .hl2 .hlText div a:hover {
+.highlights-section .hl1-container .hl-text-container div a:hover,
+.highlights-section .hl2-container .hl-text-container div a:hover {
   color: rgba(255, 255, 255, 0.5);
   transition: 0.3s;
 }
-.highlights .hl2 {
+.highlights-section .hl2-container {
   flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 768px) {
-  .highlights .hl1,
-.highlights .hl2 {
+  .highlights-section .hl1-container,
+.highlights-section .hl2-container {
     flex-direction: column;
     height: 100%;
   }
-  .highlights .hl1 img,
-.highlights .hl2 img {
+  .highlights-section .hl1-container img,
+.highlights-section .hl2-container img {
     width: 100%;
     height: 300px;
   }
-  .highlights .hl1 .hlText,
-.highlights .hl2 .hlText {
+  .highlights-section .hl1-container .hl-text-container,
+.highlights-section .hl2-container .hl-text-container {
     height: 100%;
     width: 100%;
   }
-  .highlights .hl1 .hlText div,
-.highlights .hl2 .hlText div {
+  .highlights-section .hl1-container .hl-text-container div,
+.highlights-section .hl2-container .hl-text-container div {
     grid-column: 1/-1;
     max-width: 100%;
     margin: 0 20px;
   }
-  .highlights .hl1 .hlText div h1,
-.highlights .hl2 .hlText div h1 {
+  .highlights-section .hl1-container .hl-text-container div h1,
+.highlights-section .hl2-container .hl-text-container div h1 {
     margin: 30px 0 0 0;
   }
-  .highlights .hl1 .hlText div p,
-.highlights .hl2 .hlText div p {
+  .highlights-section .hl1-container .hl-text-container div p,
+.highlights-section .hl2-container .hl-text-container div p {
     margin: 30px auto 25px auto;
   }
-  .highlights .hl1 .hlText div a,
-.highlights .hl2 .hlText div a {
+  .highlights-section .hl1-container .hl-text-container div a,
+.highlights-section .hl2-container .hl-text-container div a {
     margin: 60px 0;
   }
 }
 @media screen and (max-width: 345px) {
-  .highlights .hl1 .hlText div,
-.highlights .hl2 .hlText div {
+  .highlights-section .hl1-container .hl-text-container div,
+.highlights-section .hl2-container .hl-text-container div {
     width: 100%;
     max-width: 300px;
     margin: auto;
@@ -596,30 +596,30 @@ footer h1 {
   margin: 7px 0;
   font-size: 1.5rem;
 }
-footer .about {
+footer .about-container {
   display: flex;
   flex-direction: column;
   margin: 0 20px;
 }
-footer .about p {
+footer .about-container p {
   max-width: 420px;
   margin: 0;
   font-weight: normal;
 }
-footer .ftLinks {
+footer .footer-links-container {
   display: flex;
   justify-content: space-evenly;
   width: 40%;
 }
-footer .ftLinks .sitemap {
+footer .footer-links-container .sitemap-container {
   display: flex;
   flex-direction: column;
   margin: 0 20px;
 }
-footer .ftLinks .sitemap :nth-child(4) {
+footer .footer-links-container .sitemap-container :nth-child(4) {
   margin: 0 0 1.5rem 0;
 }
-footer .ftLinks .social {
+footer .footer-links-container .socials-container {
   display: flex;
   flex-direction: column;
   margin: 0 20px;
@@ -644,35 +644,35 @@ footer a:hover {
     margin: 0 0 7px 0;
     font-size: 1.5rem;
   }
-  footer .about {
+  footer .about-container {
     display: flex;
     flex-direction: column;
     margin: 0 21px;
   }
-  footer .about p {
+  footer .about-container p {
     max-width: 440px;
     margin: 0;
   }
-  footer .ftLinks {
+  footer .footer-links-container {
     display: flex;
     flex-direction: column;
     gap: 47px;
   }
-  footer .ftLinks .sitemap {
+  footer .footer-links-container .sitemap-container {
     display: flex;
     flex-direction: column;
     margin: 0 20px;
   }
-  footer .ftLinks .social {
+  footer .footer-links-container .socials-container {
     display: flex;
     flex-direction: column;
     margin: 0 20px;
   }
 }
-.challengesSection {
+.challenges-section {
   margin: 30px;
 }
-.challengesSection ul {
+.challenges-section ul {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;

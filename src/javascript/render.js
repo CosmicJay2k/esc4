@@ -1,7 +1,7 @@
 import { setStarsInRating } from "./renderStars.js";
 
 export default function render(data, idOfCard) {
-  const list = document.querySelector('.popList');
+  const list = document.querySelector('.challenges-list');
 
   const newItem = document.createElement('li');
   newItem.setAttribute("id", "id" + idOfCard);
@@ -26,7 +26,7 @@ export default function render(data, idOfCard) {
         <p class="players">${data.minParticipants} - ${data.maxParticipants} participants</p>
       </div>
       <p class="description">${data.description}</p>
-      <div class="book">
+      <div class="book-container">
         <a href="#">Book this room</a>
       </div>
     </div>

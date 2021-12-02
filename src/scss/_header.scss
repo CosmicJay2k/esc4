@@ -6,7 +6,7 @@ header {
   background: #011827;
   color: #ffffff;
 
-  .logo {
+  .logo-container {
     display: flex;
     padding: 0 0 50px 0;
 
@@ -24,17 +24,17 @@ header {
       font-size: 3.3rem;
     }
   }
-  .mobMenuIcon {
+  .open-container {
     display: none;
   }
   .modal {
     display: block;
-    .menuBox {
+    .menu-container {
       display: block;
-      .mobMenuClose {
+      .close-container {
         display: none;
       }
-      .menu {
+      .menu-list-container {
         ul {
           display: flex;
           flex-flow: row nowrap;
@@ -68,7 +68,7 @@ header {
     position: relative;
     padding: 26px 27px 36px 27px;
 
-    .logo {
+    .logo-container {
       display: flex;
 
       padding: 0;
@@ -88,7 +88,7 @@ header {
       }
     }
 
-    .mobMenuIcon {
+    .open-container {
       display: block;
       position: absolute;
       right: 20px;
@@ -114,7 +114,7 @@ header {
 
       background: rgba(255, 255, 255, 0.5);
 
-      .menuBox {
+      .menu-container {
         display: block;
         margin: 3vh auto;
 
@@ -128,7 +128,7 @@ header {
         animation-name: mobileMenuAni;
         animation-duration: 0.2s;
 
-        .mobMenuClose {
+        .close-container {
           display: block;
           position: absolute;
           right: 20px;
@@ -146,13 +146,13 @@ header {
           }
         }
 
-        .menu {
+        .menu-list-container {
           ul {
             display: none;
           }
         }
 
-        .mobMenu {
+        .mobile-menu {
           ul {
             display: flex;
             flex-direction: column;

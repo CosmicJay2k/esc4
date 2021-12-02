@@ -1,6 +1,6 @@
 @use "mixins";
 
-.popChall {
+.popular-challenges {
   margin: 0;
 
   .heading {
@@ -23,7 +23,7 @@
     list-style-type: none;
   }
 
-  .popLinks {
+  .popular-links {
     display: flex;
     justify-content: center;
     
@@ -41,7 +41,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .popChall {
+  .popular-challenges {
     .heading {
       margin: 100px 0 45px 0;
 
@@ -51,7 +51,7 @@
     ul {
       padding: 4vw;
 
-      .popCard {
+      .card {
         div {
           justify-content: flex-start;
 
@@ -62,7 +62,7 @@
       }
     }
 
-    .popLinks {
+    .popular-links {
       flex-direction: column-reverse;
       align-items: center;
 
@@ -88,7 +88,7 @@
   }
 }
 @media screen and (max-width: 1170px) {
-  .popChall {
+  .popular-challenges {
     ul {
       justify-content: space-between;
     }
