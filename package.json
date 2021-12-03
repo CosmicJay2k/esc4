@@ -1,0 +1,20 @@
+{
+  "name": "esc4",
+  "version": "1.0.0",
+  "description": "SJPI21, Design av hemsida för \"[Esc] Hacker Escape Rooms\", John Tannenberg",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass -w src/scss/style.scss src/css/style.css" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CosmicJay2k/esc4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CosmicJay2k/esc4/issues"
+  },
+  "homepage": "https://github.com/CosmicJay2k/esc4#readme"
+}
