@@ -283,6 +283,7 @@ header .modal .menu-container .menu-list-container ul li :hover {
 .popular-challenges .heading {
   margin: 100px 0 60px 0;
   font-size: 3rem;
+  font-weight: normal;
   text-align: center;
 }
 .popular-challenges ul {
@@ -505,8 +506,8 @@ header .modal .menu-container .menu-list-container ul li :hover {
   grid-column: 2/6;
   align-self: center;
 }
-.highlights-section .hl1-container .hl-text-container div h1,
-.highlights-section .hl2-container .hl-text-container div h1 {
+.highlights-section .hl1-container .hl-text-container div h2,
+.highlights-section .hl2-container .hl-text-container div h2 {
   margin: 0 auto;
   font-size: 2.7rem;
 }
@@ -562,8 +563,8 @@ header .modal .menu-container .menu-list-container ul li :hover {
     max-width: 100%;
     margin: 0 20px;
   }
-  .highlights-section .hl1-container .hl-text-container div h1,
-.highlights-section .hl2-container .hl-text-container div h1 {
+  .highlights-section .hl1-container .hl-text-container div h2,
+.highlights-section .hl2-container .hl-text-container div h2 {
     margin: 30px 0 0 0;
   }
   .highlights-section .hl1-container .hl-text-container div p,
