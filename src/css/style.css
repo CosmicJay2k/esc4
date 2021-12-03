@@ -401,13 +401,13 @@ header .modal .menu-container .menu-list-container ul li :hover {
 .card .text-container div {
   display: flex;
   justify-content: space-between;
+  margin: 4px 0 0;
 }
 .card .text-container div .rating-stars {
   padding: 0;
   font-size: 1.2rem;
 }
 .card .text-container div .rating-stars li {
-  margin: 4px 0 0;
   color: #ffffff;
   -webkit-text-stroke: 1px #000000;
 }
@@ -415,11 +415,8 @@ header .modal .menu-container .menu-list-container ul li :hover {
   color: #e3170a;
   -webkit-text-stroke: 1px #e3170a;
 }
-.card .text-container div p {
-  margin: 0;
-}
 .card .text-container div .players {
-  margin: 4px 0 0;
+  margin: 2px 0 0;
   font-size: 1.2rem;
 }
 .card .text-container .description {
